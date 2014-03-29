@@ -16,15 +16,13 @@
     <hr>
     <h2>Searched address: {{cityName}}</h2>
 </div>
-    {{data}}
+    <ul>
+        <li ng-repeat="d in data.chargerstations">{{d.csmd.id}}, {{d.csmd.name}}, {{d.csmd.Position}}</li>
+        
+       <li ng-repeat="d in data">{{d}}</li>
+    </ul>
     
-    <div class="Liste">
-        <ul>
-            <li ng-repeat="ladeS in ladestasjoner">
-                {{ladeS.chargerstations}}
-            </li>
-        </ul>
-    </div>
+
 </body>
 </html>
 
