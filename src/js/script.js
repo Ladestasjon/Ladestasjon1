@@ -4,6 +4,7 @@ var map;
 
 
 
+
 function initialize() {
   var myLatlng = new google.maps.LatLng(59.92569,10.76531);
   var mapOptions = {
@@ -23,7 +24,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
-//end map
 
 
 var ladestasjonApp = angular.module('ladestasjon1', []);
